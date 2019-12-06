@@ -1,6 +1,126 @@
+/* Retro Computer */
 @font-face {
-    font-family: 'Retro Computer';
-    src: url('../fonts/retro_computer_personal_use.ttf') format('truetype');
-    font-weight: normal;    
+    font-family: "Retro Computer";
+    src: local("Retro Computer"), local("Retro-Computer"), url("../fonts/retro_computer_personal_use.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 300;    
     font-style: normal;
+}
+
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: local("Open Sans"), local("Open-Sans"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+h1 {
+    font-family: 'Retro Computer';
+    font-size: 42px;
+    letter-spacing: 0;
+    color: #FBA58A;
+}
+
+h2 {
+    font-family: 'Retro Computer';
+    font-size: 36px;
+    letter-spacing: 0;
+    color: #FBA58A;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    font-size: 32px;
+    letter-spacing: 0;
+    color: #FEAF9A;
+}
+
+.page-header {
+    font-size: 46px;
+}
+
+.logo {
+    max-height: 17px;
+    margin-right: 25px;
+    display: block;
+    cursor: pointer;
+    padding-top: 0.4rem;
+}
+
+.top-navbar {
+    background: #D6E5F5;
+    height: 50px;
+}
+
+.top-navbar li {
+    padding-top: 5px;
+}
+
+.menu-item {
+    font-family: 'Retro Computer';
+    font-size: 13px;
+    color: #000000;
+    letter-spacing: 0.65px;
+    line-height: 2.0
+}
+
+.subtitle {
+    font-family: 'Open Sans';
+    font-size: 26px;
+    color: #9F9E9E;
+}
+
+.tenom-box {
+    height: 130px;
+    min-width: 370px;
+    border: 1px solid #707070;
+    border-radius: 2px;
+    position: relative;
+    
+}
+
+.regular-text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #9F9E9E;
+}
+
+.icon-check {
+    max-width: 38px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.footer {
+    background: #D6E5F5;
+    height: 75px;
+}
+
+.footer-icons-block {
+    padding-right: 15%;
+}
+
+.footer-icons-list {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.footer-icons-list li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-icons-list a:hover {
+    text-decoration: none;
+}
+
+/* Styles for small size (<768px) */
+
+@media screen and (max-width: 768px) {
+    .tenom-box {
+        margin-top: 20px;
+    }
 }
