@@ -27,7 +27,7 @@ h2 {
     font-family: 'Retro Computer';
     font-size: 36px;
     letter-spacing: 0;
-    color: #FBA58A;
+    color: #8BC4FF;
 }
 
 h3 {
@@ -35,6 +35,14 @@ h3 {
     font-size: 32px;
     letter-spacing: 0;
     color: #FEAF9A;
+}
+
+header {
+    padding: 0!important;
+}
+
+.bg-blue {
+    background: #D6E5F5;
 }
 
 .page-header {
@@ -56,6 +64,14 @@ h3 {
 
 .top-navbar li {
     padding-top: 5px;
+}
+
+.sm-navbar {
+    display: none;
+}
+
+.nav-item {
+    list-style: none;
 }
 
 .menu-item {
@@ -122,5 +138,20 @@ h3 {
 @media screen and (max-width: 768px) {
     .tenom-box {
         margin-top: 20px;
+        max-width: 250px;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .lg-navbar {
+        display: none;
+    }
+
+    .sm-navbar {
+        display: flex;
     }
 }
