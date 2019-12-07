@@ -32,7 +32,7 @@ h2 {
 
 h3 {
     font-family: 'Open Sans';
-    font-size: 32px;
+    font-size: 26px;
     letter-spacing: 0;
     color: #FEAF9A;
 }
@@ -134,6 +134,28 @@ header {
 
 .footer-icons-list a:hover {
     text-decoration: none;
+}
+
+.uc-simple-icon {
+    max-width: 45px;
+    box-shadow: 0px 8px 12px #00000029;
+    border-radius: 10px;
+}
+
+.sweeper-logo {
+    box-shadow: none;
+    max-width: 50px;
+    border-radius: 0px;
+}
+
+.uc-simple-icon-text {
+    display: inline-table;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    letter-spacing: 0;
+    color: #9F9E9E;
+    padding-left: 10px;
+    vertical-align: middle;
 }
 
 /* Styles for small size (<768px) */
