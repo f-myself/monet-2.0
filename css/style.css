@@ -16,6 +16,10 @@
     src: local("Open Sans"), local("Open-Sans"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
+html {
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: 'Retro Computer';
     font-size: 42px;
@@ -43,6 +47,10 @@ header {
 
 .bg-blue {
     background: #D6E5F5;
+}
+
+.ml-less-2 {
+    margin-left: -2%;
 }
 
 .page-header {
@@ -136,14 +144,16 @@ header {
     text-decoration: none;
 }
 
+.uc-icon-shadow {
+    box-shadow: 0px 8px 12px #00000029;
+}
+
 .uc-simple-icon {
     max-width: 45px;
-    box-shadow: 0px 8px 12px #00000029;
     border-radius: 10px;
 }
 
 .sweeper-logo {
-    box-shadow: none;
     max-width: 50px;
     border-radius: 0px;
 }
@@ -157,6 +167,11 @@ header {
     padding-left: 10px;
     vertical-align: middle;
 }
+
+.uc-subtitle-icon {
+    border-radius: 20px;
+}
+
 
 /* Styles for small size (<768px) */
 
@@ -178,5 +193,9 @@ header {
 
     .sm-navbar {
         display: flex;
+    }
+
+    .ml-less-2 {
+        margin-left: 0;
     }
 }
