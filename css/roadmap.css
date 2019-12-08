@@ -5,6 +5,10 @@
   src: url("../fonts/monet-icons.eot");
   src: url("../fonts/monet-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/monet-icons.woff") format("woff"), url("../fonts/monet-icons.ttf") format("truetype"), url("../fonts/monet-icons.svg#monet-icons") format("svg"); }
 
+* {
+  box-sizing: unset;
+}
+
 [data-icon]:before {
   font-family: "monet-icons";
   content: attr(data-icon);
@@ -351,7 +355,7 @@
     text-align: center;
     margin-top: 5px; }
   .roadmap__point {
-    padding-bottom: 1.2rem!important;
+    padding-bottom: 1.4rem!important;
     position: relative; }
     .roadmap__point--open:before {
       -webkit-transform: rotate(90deg);
