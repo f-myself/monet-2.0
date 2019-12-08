@@ -93,6 +93,10 @@ header {
     line-height: 2.0
 }
 
+.container {
+    padding-top: 50px;
+}
+
 .subtitle {
     font-family: 'Open Sans';
     font-size: 26px;
