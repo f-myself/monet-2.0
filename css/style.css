@@ -85,7 +85,12 @@ header {
     display: none;
 }
 
-.nav-item {
+ul.list-inline li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.nav-item, .list-item {
     list-style: none;
 }
 
