@@ -57,6 +57,10 @@ header {
     font-size: 46px;
 }
 
+.container {
+    padding-top: 50px;
+}
+
 .logo {
     max-height: 17px;
     margin-right: 25px;
