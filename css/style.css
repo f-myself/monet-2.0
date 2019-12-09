@@ -185,6 +185,21 @@ ul.list-inline li {
     border-radius: 20px;
 }
 
+.faq-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+}
+
+.btn-card:focus {
+    box-shadow: none;
+}
+
+.card-text {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #9F9E9E;
+}
+
 
 /* Styles for small size (<768px) */
 
