@@ -16,6 +16,8 @@
     src: local("Open Sans"), local("Open-Sans"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
+
+
 html {
     overflow-x: hidden;
 }
@@ -35,10 +37,41 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans';
+    font-family: halyard-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 26px;
     letter-spacing: 0;
-    color: #FEAF9A;
+    color: #9F9E9E;
+}
+
+p {
+    font-family: halyard-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #9F9E9E;
+}
+
+a {
+    font-family: halyard-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #1C3F94;
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: ocr-b-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    color: #9F9E9E;
+}
+
+button:hover {
+    color: #91F9B9;
 }
 
 header {
@@ -122,7 +155,9 @@ ul.list-inline li {
 }
 
 .regular-text {
-    font-family: 'Open Sans';
+    font-family: halyard-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16px;
     color: #9F9E9E;
 }
