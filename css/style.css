@@ -75,6 +75,10 @@ header {
     margin-left: -2%;
 }
 
+.mt-less-5 {
+    margin-top: -5%;
+}
+
 .page-header {
     font-size: 46px;
 }
@@ -103,6 +107,14 @@ header {
 
 }
 
+.main-navbar {
+    background: transparent;
+}
+
+.main-image {
+    max-width: 100%;
+}
+
 .sm-navbar {
     display: none;
 }
@@ -126,6 +138,12 @@ ul.list-inline li {
 
 .container {
     padding-top: 50px;
+}
+
+.title-number {
+    font-family: 'Retro Computer';
+    font-size: 200px;
+    color: #FBA58A;
 }
 
 .tenom-box {
