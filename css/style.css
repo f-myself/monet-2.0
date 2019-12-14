@@ -7,17 +7,6 @@
     font-style: normal;
 }
 
-/* Open Sans */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 700;
-    src: local("Open Sans"), local("Open-Sans"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
-}
-
-
-
 html {
     overflow-x: hidden;
 }
@@ -26,7 +15,7 @@ h1 {
     font-family: 'Retro Computer';
     font-size: 42px;
     letter-spacing: 0;
-    color: #FBA58A;
+    color:#FBA58A;
 }
 
 h2 {
@@ -43,13 +32,13 @@ h3 {
     font-size: 26px;
     letter-spacing: 0;
     color: #9F9E9E;
-<<<<<<< HEAD
-=======
+    font-size: 30px;
+    letter-spacing: 0;
+    color: #9F9E9E;
 }
 
 p {
     font-family: halyard-display, sans-serif;
-    font-weight: 300;
     font-style: normal;
     color: #9F9E9E;
 }
@@ -61,7 +50,7 @@ a {
     color: #1C3F94;
 }
 
-button {
+button, .button {
     background: none;
     border: none;
     font-family: ocr-b-std, monospace;
@@ -74,7 +63,8 @@ button {
 
 button:hover {
     color: #91F9B9;
->>>>>>> Add new fonts + styles
+    color: #91F9B9;
+    text-decoration: none;
 }
 
 header {
@@ -93,6 +83,15 @@ header {
 
 .ml-less-2 {
     margin-left: -2%;
+}
+
+.mt-less-5 {
+    margin-top: -5%;
+}
+
+.subscribe-button {
+    border: 1px solid #333333;
+    border-radius: 2px;
 }
 
 .page-header {
@@ -118,9 +117,36 @@ header {
 
 .top-navbar li {
     padding-top: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
 
+}
+
+.main-navbar {
+    background: transparent;
+}
+
+.secondary-navbar {
+    display: none;
+}
+
+.main-image {
+    min-height: 100vh;
+    background: url(../images/main.png);
+    background-size: cover;
+}
+
+.main-title {
+    padding-left: 15%;
+}
+
+.main-title h1 {
+    padding-top: 35%;
+    color: #ffffff;
+}
+
+.main-title h3 {
+    color: #FBA58A;
 }
 
 .sm-navbar {
@@ -148,10 +174,10 @@ ul.list-inline li {
     padding-top: 50px;
 }
 
-.subtitle {
-    font-family: 'Open Sans';
-    font-size: 26px;
-    color: #9F9E9E;
+.title-number {
+    font-family: 'Retro Computer';
+    font-size: 200px;
+    color: #FBA58A;
 }
 
 .tenom-box {
@@ -163,11 +189,15 @@ ul.list-inline li {
     
 }
 
+.library-img {
+    max-width: 100%;
+}
+
 .regular-text {
     font-family: halyard-display, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 17px;
     color: #9F9E9E;
 }
 
@@ -216,11 +246,12 @@ ul.list-inline li {
 }
 
 .uc-simple-icon-text {
+    font-family: halyard-display, sans-serif;
+    font-style: normal;
     display: inline-table;
-    font-family: 'Retro Computer';
     font-size: 20px;
     letter-spacing: 0;
-    color: #1C3F94;
+    color: #9F9E9E;
     padding-left: 10px;
     vertical-align: middle;
 }
@@ -238,11 +269,55 @@ ul.list-inline li {
     box-shadow: none;
 }
 
+.card-header {
+    background: #ffffff;
+}
+
 .card-text {
     font-family: 'Open Sans';
     font-size: 14px;
     color: #9F9E9E;
 }
+
+/* VIDEO SECTION */
+#video-sec {
+    background-color: #fff;
+}
+.section-video{ padding: 90px 0px;
+    
+}
+
+
+.video-center {
+    max-width: 700px;
+    max-height: 470px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+    border: 12px solid #FBA58A;
+    border-radius: 6px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /* Styles for small size (<768px) */
 
@@ -260,9 +335,13 @@ ul.list-inline li {
     }
 }
 
-@media screen and (max-width: 1305px) {
+@media screen and (max-width: 1279px) {
     .lg-navbar {
         display: none;
+    }
+
+    .main-title h1 {
+        padding-top: 40%;
     }
 
     .sm-navbar {
