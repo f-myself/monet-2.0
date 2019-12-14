@@ -112,7 +112,23 @@ header {
 }
 
 .main-image {
-    max-width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: url(../images/main.png);
+    background-size: cover;
+}
+
+.main-title {
+    padding-left: 15%;
+}
+
+.main-title h1 {
+    padding-top: 35%;
+    color: #ffffff;
+}
+
+.main-title h3 {
+    color: #FBA58A;
 }
 
 .sm-navbar {
@@ -239,6 +255,44 @@ ul.list-inline li {
     font-family: 'Open Sans';
     font-size: 14px;
     color: #9F9E9E;
+}
+
+/* VIDEO SECTION */
+#video-sec {
+    background-color: #fff;
+}
+.section-video{ padding: 90px 0px;
+    
+}
+
+
+.video-center {
+    max-width: 700px;
+    max-height: 470px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+    border: 12px solid #FBA58A;
+    border-radius: 6px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
