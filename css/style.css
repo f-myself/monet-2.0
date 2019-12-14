@@ -79,6 +79,11 @@ header {
     margin-top: -5%;
 }
 
+.subscribe-button {
+    border: 1px solid #333333;
+    border-radius: 2px;
+}
+
 .page-header {
     font-size: 46px;
 }
