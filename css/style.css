@@ -71,6 +71,10 @@ header {
     padding: 0!important;
 }
 
+footer {
+    padding-top: 0!important;
+}
+
 /* css vlad */
 .text-left-use-cases {
     text-align: center;
@@ -213,9 +217,9 @@ ul.list-inline li {
     height: 75px;
 }
 
-.footer-icons-block {
+/* .footer-icons-block {
     padding-right: 15%;
-}
+} */
 
 .footer-icons-list {
     list-style: none;
