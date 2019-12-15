@@ -5,7 +5,7 @@
   src: url("../fonts/monet-icons.eot");
   src: url("../fonts/monet-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/monet-icons.woff") format("woff"), url("../fonts/monet-icons.ttf") format("truetype"), url("../fonts/monet-icons.svg#monet-icons") format("svg"); }
 
-* {
+#roadmap * {
   box-sizing: unset;
 }
 

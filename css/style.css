@@ -166,6 +166,18 @@ ul.list-inline li {
     list-style: none;
 }
 
+.navbar-toggler, .navbar-toggler:hover, .navbar-toggler:focus {
+    display: block;
+    border: none;
+    outline: none;
+    right: 20px;
+}
+
+.navbar-toggler i {
+    font-size: 30px;
+    color: #1C3F94;
+}
+
 .menu-item {
     font-family: 'Retro Computer';
     font-size: 13px;
@@ -229,6 +241,7 @@ ul.list-inline li {
 
 .footer-icons-list a:hover {
     text-decoration: none;
+    opacity: 0.7;
 }
 
 .uc-icon-shadow {
@@ -346,6 +359,12 @@ ul.list-inline li {
 
     .sm-navbar {
         display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-item {
+        font-size: 16px;
+        color: #626262;
     }
 
     .ml-less-2 {
