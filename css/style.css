@@ -217,10 +217,6 @@ ul.list-inline li {
     height: 75px;
 }
 
-/* .footer-icons-block {
-    padding-right: 15%;
-} */
-
 .footer-icons-list {
     list-style: none;
     padding-top: 5px;
@@ -354,5 +350,19 @@ ul.list-inline li {
 
     .ml-less-2 {
         margin-left: 0;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .footer-icons-list {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-icons-list li {
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
