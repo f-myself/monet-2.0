@@ -5,13 +5,16 @@ const $secondaryNavbar = $('#js-secondary-navbar');
 $(window).scroll(() => {
     if(pageYOffset > 400) {
         $mainNavbar.slideUp(300, () => {
-            $secondaryNavbar.slideDown(300);
+            if($(window).width() >= 1279) {
+                $secondaryNavbar.slideDown(300);
+            }
         });
     } else {
         $secondaryNavbar.slideUp(300, () => {
-            $mainNavbar.slideDown(300);
+            $(window).width() >= 1279 {
+                $mainNavbar.slideDown(300);
+            }
         });
-
     }
 })
 

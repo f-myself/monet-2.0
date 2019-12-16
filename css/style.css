@@ -357,6 +357,10 @@ ul.list-inline li {
         display: none;
     }
 
+    #js-secondary-navbar {
+        display: none;
+    }
+
     .main-title h1 {
         padding-top: 40%;
     }
