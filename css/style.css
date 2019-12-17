@@ -8,8 +8,10 @@
 }
   
 
-html {
-    overflow-x: hidden;
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden!important;
 }
 
 h1 {
@@ -48,6 +50,7 @@ a {
     font-weight: 300;
     font-style: normal;
     color: #1C3F94;
+    text-decoration: none!important;
 }
 
 button, .button {
@@ -403,6 +406,10 @@ ul.list-inline li {
 }
 
 @media screen and (max-width: 1279px) {
+    body {
+        overflow-x: hidden!important;
+    }
+
     h2 {
         font-size: 28px;
     }
