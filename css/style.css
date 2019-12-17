@@ -208,7 +208,7 @@ ul.list-inline li {
     
 }
 
-.library-img {
+.default-img {
     max-width: 100%;
 }
 
@@ -352,6 +352,10 @@ ul.list-inline li {
 }
 
 @media screen and (max-width: 1279px) {
+    h2 {
+        font-size: 28px;
+    }
+    
     h3 {
         font-size: 24px;
     }
@@ -372,9 +376,16 @@ ul.list-inline li {
         font-size: 32px;
     }
 
+    .main-image {
+        margin-right: 0;
+        background: url(../images/main-mobile.png);
+        background-size: cover;
+    }
+
 
     .main-title h1 {
-        padding-top: 40%;
+        padding-top: 33%;
+        font-size: 30px;
     }
 
     .sm-navbar {
