@@ -5,12 +5,8 @@ const $secondaryNavbar = $('#js-secondary-navbar');
 const $cardHeaders = $('.card-header');
 
 $(window).scroll(() => {
-    if(pageYOffset > 400) {
-        $mainNavbar.slideUp(300, () => {
-            if($(window).width() >= 1279) {
+    if(pageYOffset > 400 && $(window).width() >= 1279) {
                 $secondaryNavbar.slideDown(300);
-            }
-        });
     } else {
         $secondaryNavbar.slideUp(300, () => {
                 $mainNavbar.slideDown(300);
