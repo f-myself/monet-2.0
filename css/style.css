@@ -303,6 +303,10 @@ ul.list-inline li {
     border-radius: 20px;
 }
 
+.accordion {
+    padding-top: 10px;
+}
+
 .faq-card {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 2px;
@@ -316,9 +320,14 @@ ul.list-inline li {
     background: #ffffff;
 }
 
+.border-b-none {
+    border-bottom: none;
+}
+
+
 .card-text {
-    font-family: 'Open Sans';
-    font-size: 14px;
+    text-align: left;
+    font: Book 17px/20px Halyard Display;
     color: #9F9E9E;
 }
 
