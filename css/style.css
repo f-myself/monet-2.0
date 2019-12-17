@@ -258,10 +258,8 @@ ul.list-inline li {
 
 .support-icons li a {
     vertical-align: sub;
-    vertical-align: sub;
     color: #879DBB;
-    text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
     height: 100%;
 }
 
@@ -472,6 +470,10 @@ ul.list-inline li {
 
     .tenom-box {
         min-width: 100%;
+    }
+
+    .list-sm li {
+        display: block!important;
     }
 
     .footer {
