@@ -6,6 +6,7 @@
     font-weight: 300;    
     font-style: normal;
 }
+  
 
 html {
     overflow-x: hidden;
@@ -225,6 +226,32 @@ ul.list-inline li {
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.support-icons {
+    padding-inline-start: 0;
+}
+
+.support-icons li {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    border: 1px solid #879DBB;
+}
+
+.support-icons li a {
+    vertical-align: sub;
+    vertical-align: sub;
+    color: #879DBB;
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.support-icons li a:hover {
+    color: #1C3F94;
+    
 }
 
 .footer {
