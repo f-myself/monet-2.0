@@ -93,6 +93,14 @@ footer {
     margin-top: -5%;
 }
 
+.sm-d-none {
+    display: inline-block
+}
+
+.xl-d-none {
+    display: none;
+}
+
 .subscribe-button {
     border: 1px solid #333333;
     border-radius: 2px;
@@ -211,6 +219,13 @@ ul.list-inline li {
 
 .default-img {
     max-width: 100%;
+}
+
+.scale-1-4 {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
 }
 
 .regular-text {
@@ -404,6 +419,14 @@ ul.list-inline li {
         font-size: 16px;
     }
 
+    .sm-d-none {
+        display: none;
+    }
+
+    .xl-d-none {
+        display: inline-block;
+    }
+
     .lg-navbar {
         display: none;
     }
@@ -418,6 +441,10 @@ ul.list-inline li {
         background-size: cover;
     }
 
+
+    .scale-1-4 {
+        transform: none;
+    }
 
     .main-title h1 {
         padding-top: 33%;
