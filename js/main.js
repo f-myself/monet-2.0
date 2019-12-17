@@ -27,12 +27,11 @@ $cardHeaders.click(event => {
     } else {
         buttonImage.src = "./images/arrow.svg";
     }
-})
-
-$cardHeaders.on('show.bs.collapse', function () {
-    console.log('showing!');
 });
 
-$cardHeaders.on('hide.bs.collapse', function () {
-    console.log('closing!');
-})
+$("#fast-nav").on("click","a", event => {
+    event.preventDefault();
+    let id  = $(event.currentTarget).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top-50}, 'fast');
+});
