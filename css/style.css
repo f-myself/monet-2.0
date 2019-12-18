@@ -26,7 +26,7 @@ h2 {
     color: #8BC4FF;
 }
 
-h3 {
+h3, #Mobile_Ad-Hoc_Blockchains {
     font-family: halyard-display, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -41,6 +41,15 @@ p {
     font-family: halyard-display, sans-serif;
     font-style: normal;
     color: #9F9E9E;
+}
+
+svg text {
+    font-family: halyard-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    color: #9F9E9E;
+    background-color: #ffffff;
 }
 
 a {
@@ -76,12 +85,10 @@ footer {
     padding-top: 0!important;
 }
 
-/* css vlad */
-.text-left-use-cases {
-    text-align: center;
-}
+/* SVG ID's */
 
-/*------------*/
+
+/* /SVG ID's */
 .bg-blue {
     background: #D6E5F5;
 }
@@ -413,6 +420,15 @@ ul.list-inline li {
     
     h3 {
         font-size: 24px;
+    }
+
+    svg text {
+        font-family: halyard-display, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+        color: #9F9E9E;
+        background-color: #ffffff;
     }
 
     button, .button {

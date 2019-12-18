@@ -35,3 +35,5 @@ $("#fast-nav").on("click","a", event => {
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top-50}, 'fast');
 });
+
+$('#Babble_iOS_Library').click(() => alert('I AM WORKING!'));
