@@ -224,14 +224,14 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   .tooltip__title {
-    font-family: 'Open Sans';
+    font-family: halyard-display, sans-serif;
     margin: 0;
     font-size: 18px;
     padding-right: 10px;
     text-align: left;
     color: #fff; }
   .tooltip__text {
-    font-family: 'Open Sans';
+    font-family: halyard-display, sans-serif;
     font-size: 13px;
     text-align: left;
     color: #fff;
