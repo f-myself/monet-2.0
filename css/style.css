@@ -315,6 +315,7 @@ ul.list-inline li {
 
 .uc-subtitle-icon {
     border-radius: 20px;
+    max-width: 86px;
 }
 
 .accordion {
