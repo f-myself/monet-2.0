@@ -10,14 +10,19 @@ const arcDependencies = [
     {parent: '#Java_Script_Library', child: '#forJSLib'},
     {parent: '#EVM_Lite_CLI', child: '#forEVMCLI'},
     {parent: '#Monet_CLI', child: '#forMonetCLI'},
+    {parent: '#Monet_D', child: '#forMonetD'},
 
 ];
 
 const setEventDependencies = (parent, child) => {
     $(parent).click(() => {
         if ($(child).css('display') === 'none') {
+            console.log(parent, child);
+
             $(child).show('fast');
         } else {
+            console.log(parent, child);
+
             $(child).hide('fast');
         }
     });
