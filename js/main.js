@@ -2,6 +2,31 @@ const $faqCards = $('.btn-card');
 const $mainNavbar = $('#js-main-navbar');
 const $secondaryNavbar = $('#js-secondary-navbar');
 
+const arcDependencies = [
+    {parent: '#Babble_iOS_Library', child: '#forBabbleIOSLib'},
+    {parent: '#Babble_Android_Library', child: '#forBabbleAndroidLib'},
+    {parent: '#Babble', child: '#forBabble'},
+    {parent: '#EVM_Lite', child: '#forEVMLite'},
+    {parent: '#Java_Script_Library', child: '#forJSLib'},
+    {parent: '#EVM_Lite_CLI', child: '#forEVMCLI'},
+    {parent: '#Monet_CLI', child: '#forMonetCLI'},
+
+];
+
+const setEventDependencies = (parent, child) => {
+    $(parent).click(() => {
+        if ($(child).css('display') === 'none') {
+            $(child).show('fast');
+        } else {
+            $(child).hide('fast');
+        }
+    });
+};
+
+arcDependencies.forEach(dep => {
+    setEventDependencies(dep.parent, dep.child);
+});
+
 const $cardHeaders = $('.card-header');
 
 $(window).scroll(() => {
@@ -35,5 +60,3 @@ $("#fast-nav").on("click","a", event => {
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top-50}, 'fast');
 });
-
-$('#Babble_iOS_Library').click(() => alert('I AM WORKING!'));
