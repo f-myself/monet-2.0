@@ -11,10 +11,18 @@ const arcDependencies = [
     {parent: '#EVM_Lite_CLI', child: '#forEVMCLI'},
     {parent: '#Monet_CLI', child: '#forMonetCLI'},
     {parent: '#Monet_D', child: '#forMonetD'},
+    {parent: '#Monet_wallet', child: '#forMonetWallet'},
+    {parent: '#Group_3087', child: '#forMonetHUB'},
+    {parent: '#Twaddle', child: '#forTwaddle'},
+    {parent: '#logos_4', child: '#forTwaddle'},
+    {parent: '#Chatterbox', child: '#forChatterbox'},
+    {parent: '#Chatr_logo_300x300-2', child: '#forChatterbox'},
+    {parent: '#Mobile_Ad-Hoc_Blockchains', child: '#forAdHoc'},
 
 ];
 
 const setEventDependencies = (parent, child) => {
+    $(parent).css('cursor', 'pointer');
     $(parent).click(() => {
         if ($(child).css('display') === 'none') {
             console.log(parent, child);
