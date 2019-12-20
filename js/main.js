@@ -18,6 +18,18 @@ const arcDependencies = [
     {parent: '#Chatterbox', child: '#forChatterbox'},
     {parent: '#Chatr_logo_300x300-2', child: '#forChatterbox'},
     {parent: '#Mobile_Ad-Hoc_Blockchains', child: '#forAdHoc'},
+    /* Mobile deps */ 
+    {parent: '#Babble_iOS_Library-sm', child: '#forBabbleIOSLib-sm'},
+    {parent: '#Babble_Android_Library-sm', child: '#forBabbleAndroidLib-sm'},
+    {parent: '#Babble-sm', child: '#forBabble-sm'},
+    {parent: '#EVM_Lite-sm', child: '#forEVMLite-sm'},
+    {parent: '#Java_Script_Library-sm', child: '#forJSLib-sm'},
+    {parent: '#EVM_Lite_CLI-sm', child: '#forEVMCLI-sm'},
+    {parent: '#Monet_CLI-sm', child: '#forMonetCLI-sm'},
+    {parent: '#Monet_D-sm', child: '#forMonetD-sm'},
+
+
+
 
 ];
 

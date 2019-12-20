@@ -440,7 +440,7 @@ ul.list-inline li {
         font-family: halyard-display, sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size: 15px;
+        font-size: 13px;
         color: #9F9E9E;
         background-color: #ffffff;
     }
@@ -451,6 +451,10 @@ ul.list-inline li {
 
     .regular-text {
         font-size: 16px;
+    }
+
+    .tooltip-text tspan {
+        font-size: 12px;
     }
 
     .sm-d-none {
