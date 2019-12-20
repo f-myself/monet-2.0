@@ -3,6 +3,7 @@ const $mainNavbar = $('#js-main-navbar');
 const $secondaryNavbar = $('#js-secondary-navbar');
 
 const arcDependencies = [
+    /* PC deps */
     {parent: '#Babble_iOS_Library', child: '#forBabbleIOSLib'},
     {parent: '#Babble_Android_Library', child: '#forBabbleAndroidLib'},
     {parent: '#Babble', child: '#forBabble'},
@@ -27,10 +28,14 @@ const arcDependencies = [
     {parent: '#EVM_Lite_CLI-sm', child: '#forEVMCLI-sm'},
     {parent: '#Monet_CLI-sm', child: '#forMonetCLI-sm'},
     {parent: '#Monet_D-sm', child: '#forMonetD-sm'},
-
-
-
-
+    {parent: '#Monet_wallet-sm', child: '#forMonetWallet-sm'},
+    {parent: '#Monet_HUB-sm', child: '#forMonetHUB-sm'},
+    {parent: '#New_HUB-sm', child: '#forMonetHUB-sm'},
+    {parent: '#Twaddle-sm', child: '#forTwaddle-sm'},
+    {parent: '#logos_4-sm', child: '#forTwaddle-sm'},   
+    {parent: '#Chatterbox-sm', child: '#forChatterbox-sm'},
+    {parent: '#Chatr_logo_300x300-2-sm', child: '#forChatterbox-sm'},
+    {parent: '#Mobile_Ad-Hoc_Blockchains-sm', child: '#forAdHoc-sm'}
 ];
 
 const setEventDependencies = (parent, child) => {
