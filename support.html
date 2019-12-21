@@ -148,11 +148,11 @@
             </div>
             <div class="col-12 pt-3">
                 <ul class="list-item list-inline list-sm">
-                    <li><a href="https://monet.network/docs.html" class='regular-text button'>Documentation <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/mosaicnetworks" class='regular-text button'>Github <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-                    <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=ping@mosaicnetworks.io" class='regular-text button'>Jobs <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class='regular-text button'>Become a validator <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-                    <li><a href="https://medium.com/@monet.network" class='regular-text button'>Medium <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://monet.network/docs.html" style="display: inline-block;" class="button mt-2">Documentation <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/mosaicnetworks" style="display: inline-block;" class="button mt-3">Github <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=ping@mosaicnetworks.io" style="display: inline-block;" class="button mt-3">Jobs <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" style="display: inline-block;" class="button mt-3">Become a validator <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a href="https://medium.com/@monet.network" style="display: inline-block;" class="button mt-3">Medium <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -357,7 +357,7 @@
             </div>
         </div>
         <div class="row justify-content-center text-left">
-            <div class="col-xl-5 col-sm-12 mr-xl-4">
+            <div class="col-xl-6 col-sm-12">
                 <div class="accordion" id="accordion-1">
                     <div class="card faq-card">
                         <div class="card-header" id="heading-1">
@@ -566,7 +566,7 @@
 			
 
             <!-- column 2 -->
-            <div class="col-xl-5 col-sm-12 ml-xl-4">
+            <div class="col-xl-6 col-sm-12">
                 <div class="accordion" id="accordion-15">
                     <div class="card faq-card">
                         <div class="card-header" id="heading-15">
@@ -772,11 +772,19 @@
                     <li>Tools for blockchain developers</li>
                     <li>Other interesting stuff</li>
                 </ul>
-                <form class="form-inline">
-                    <input type="text" placeholder="E-mail address">
-                    <button class="subscribe-button class="input-group-text"">
+                <form class="form-inline" method="POST" action="https://monetsocial.activehosted.com/proc.php" novalidate="">
+                    <input type="hidden" name="u" value="1"/>
+                    <input type="hidden" name="f" value="1"/>
+                    <input type="hidden" name="s"/>
+                    <input type="hidden" name="c" value="0"/>
+                    <input type="hidden" name="m" value="0"/>
+                    <input type="hidden" name="act" value="sub"/>
+                    <input type="hidden" name="v" value="2"/>
+                    <input class="form-control form-input" type="text" placeholder="E-mail address" id="subscribe" type="text" name="email" required="">
+                    <button class="subscribe-button form-control">
                         Subscribe <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </button>
+                    <div class="_form-thank-you" style="display:none;"></div>
                 </form>
             </div>
             <div class="col-xl-6 order-xl-2 order-1">

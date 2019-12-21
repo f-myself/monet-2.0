@@ -13,7 +13,8 @@ const arcDependencies = [
     {parent: '#Monet_CLI', child: '#forMonetCLI'},
     {parent: '#Monet_D', child: '#forMonetD'},
     {parent: '#Monet_wallet', child: '#forMonetWallet'},
-    {parent: '#Group_3087', child: '#forMonetHUB'},
+    {parent: '#Monet_HUB', child: '#forMonetHUB'},
+    {parent: '#New_HUB', child: '#forMonetHUB'},
     {parent: '#Twaddle', child: '#forTwaddle'},
     {parent: '#logos_4', child: '#forTwaddle'},
     {parent: '#Chatterbox', child: '#forChatterbox'},
@@ -40,16 +41,14 @@ const arcDependencies = [
 
 const setEventDependencies = (parent, child) => {
     $(parent).css('cursor', 'pointer');
-    $(parent).click(() => {
+    $(parent).mouseover(() => {
         if ($(child).css('display') === 'none') {
-            console.log(parent, child);
-
+            $('#svg-xl').height(1470)
             $(child).show('fast');
-        } else {
-            console.log(parent, child);
-
-            $(child).hide('fast');
         }
+    });
+    $(parent).mouseleave(() => {
+            $(child).hide('fast');
     });
 };
 
@@ -61,10 +60,10 @@ const $cardHeaders = $('.card-header');
 
 $(window).scroll(() => {
     if(pageYOffset > 50 && $(window).width() >= 1279) {
-                $secondaryNavbar.slideDown(300);
+        $secondaryNavbar.slideDown(300);
     } else {
         $secondaryNavbar.slideUp(300, () => {
-                $mainNavbar.slideDown(300);
+            $mainNavbar.slideDown(300);
         });
     }
 })

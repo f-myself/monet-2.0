@@ -315,6 +315,8 @@ ul.list-inline li {
     color: #879DBB;
     display: inline-flex;
     height: 100%;
+    padding-top: 10%;
+    padding-left: 3%;
 }
 
 .support-icons li a:hover {
@@ -387,6 +389,16 @@ ul.list-inline li {
 
 .card-header {
     background: #ffffff;
+    padding: .50rem;
+}
+
+.card-header .fa {
+    font-size: 25px;
+}
+
+.form-input:focus {
+    border: 1px solid #FEAF9A;
+    box-shadow: none;
 }
 
 .border-b-none {

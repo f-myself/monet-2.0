@@ -395,6 +395,7 @@
       background-color: #8DEEB1; }
   .roadmap__text {
     position: absolute;
+    background: #ffffff;
     left: 60%;
     top: 35%;
     -webkit-transform: translateY(-50%);
