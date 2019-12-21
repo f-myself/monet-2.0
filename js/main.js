@@ -60,7 +60,7 @@ arcDependencies.forEach(dep => {
 const $cardHeaders = $('.card-header');
 
 $(window).scroll(() => {
-    if(pageYOffset > 400 && $(window).width() >= 1279) {
+    if(pageYOffset > 50 && $(window).width() >= 1279) {
                 $secondaryNavbar.slideDown(300);
     } else {
         $secondaryNavbar.slideUp(300, () => {
@@ -69,12 +69,25 @@ $(window).scroll(() => {
     }
 })
 
+$('#navbarToggleExternalContent').on('show.bs.collapse', () => {
+    $($('.navbar-toggler').children()[0]).fadeOut(300);
+    setTimeout(() => {
+        $($('.navbar-toggler').children()[1]).fadeIn(300);
+    }, 300);
+})
+
+$('#navbarToggleExternalContent').on('hide.bs.collapse', () => {
+    $($('.navbar-toggler').children()[1]).fadeOut(300);
+    setTimeout(() => {
+        $($('.navbar-toggler').children()[0]).fadeIn(300);
+    }, 300);
+})
+
+
 $cardHeaders.click(event => {
     const block = event.currentTarget;
     const button = $(event.target);
     const buttonImage = $(event.target).children()[0];
-
-    console.log()
 
     if (!$($(button)[0].dataset.target).hasClass('show')){
         $(block).addClass('border-b-none');
