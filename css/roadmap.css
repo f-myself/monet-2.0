@@ -438,8 +438,11 @@
 @media only screen and (max-width: 767px) {
   .roadmap .roadmap-tooltip {
     padding: 10px;
-    top: 80px;
+    top: 55px;
     width: auto; }
+    .roadmap__point {
+      padding-bottom: 0!important;
+    }
   .roadmap__text {
     position: static;
     -webkit-transform: translate(0, 0);

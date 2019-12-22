@@ -143,7 +143,6 @@ footer {
 
 .logo {
     max-height: 17px;
-    margin-right: 25px;
     display: block;
     cursor: pointer;
     padding-top: 0.4rem;
@@ -407,9 +406,12 @@ ul.list-inline li {
 
 
 .card-text {
+    font-family: halyard-display, sans-serif;
+    font-weight: 300;
     text-align: left;
-    font: Book 17px/20px Halyard Display;
+    font-size: 17px;
     color: #9F9E9E;
+    padding-top: 0;
 }
 
 /* VIDEO SECTION */
