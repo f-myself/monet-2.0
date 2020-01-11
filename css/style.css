@@ -471,6 +471,10 @@ ul.list-inline li {
     .text-left-use-cases {
         text-align: left;
     }
+
+    .mobile-arc {
+        margin-top: -55%;
+    }
 }
 
 @media screen and (max-width: 1279px) {
@@ -573,6 +577,10 @@ ul.list-inline li {
         display: block!important;
     }
 
+    .mobile-arc {
+        margin-top: -55%;
+    }
+
     .footer {
         height: 100%;
     }
@@ -585,5 +593,13 @@ ul.list-inline li {
     .footer-icons-list li {
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+
+/* Fixes */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .mobile-arc {
+        margin-top: -30%;
     }
 }
