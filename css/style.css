@@ -176,15 +176,8 @@ footer {
 
 .main-image {
     background: url(../images/main.png);
-    min-height: 110vh;
+    min-height: 115vh;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.eco-image {
-    background: url(../images/ecosystem.png);
-    min-height: 120vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
