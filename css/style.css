@@ -29,6 +29,7 @@
 
 body {
     overflow-x: hidden!important;
+    overflow-y: scroll;
 }
 
 h1 {
@@ -595,4 +596,11 @@ ul.list-inline li {
     .mobile-arc {
         margin-top: -30%;
     }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+      }
 }
